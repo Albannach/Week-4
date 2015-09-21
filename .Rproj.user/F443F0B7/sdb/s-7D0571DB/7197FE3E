@@ -1,0 +1,18 @@
+{
+    "contents" : "rankhospital <- function(state, outcome, num = \"best\") {\n    ## Read outcome data\n    ## Check that state and outcome are valid\n    ## Return hospital name in that state with the given rank\n    ## 30-day death rate\n}",
+    "created" : 1442865339336.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2711796549",
+    "id" : "7197FE3E",
+    "lastKnownWriteTime" : 1442865357,
+    "path" : "C:/GitHub/R-Programming/Week 4/rankhospital.R",
+    "project_path" : "rankhospital.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "rankall <- function(outcome, num = \"best\") {\n    ## Read outcome data\n    ## Check that state and outcome are valid\n    ## For each state, find the hospital of the given rank\n    ## Return a data frame with the hospital names and the\n    ## (abbreviated) state name\n}",
+    "created" : 1442865384824.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3665478914",
+    "id" : "2721B067",
+    "lastKnownWriteTime" : 1442865471,
+    "path" : "C:/GitHub/R-Programming/Week 4/rankall.R",
+    "project_path" : "rankall.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : true,
+    "type" : "r_source"
+}
