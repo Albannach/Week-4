@@ -1,12 +1,12 @@
 {
-    "contents" : "best <- function(state, outcome) {\n    \n    od = outcomeData()\n    data = od$data()\n\n    od$validateState(state)\n    columnName = od$validateOutcome(outcome)\n    \n    columns = c(\"Hospital.Name\", columnName)\n    \n    stateOutcomes = subset(data, data[,\"State\"] == state & !is.na(data[,columnName]), select=columns)\n    c(stateOutcomes[order(stateOutcomes[,2], stateOutcomes[,1]),][1,1])\n}",
+    "contents" : "best = function(state, outcome, rank=1) {\n    \n    source(\"rankhospital.R\")\n    \n    rankhospital(state, outcome, 1)\n    \n}",
     "created" : 1442865266648.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1144658407",
+    "hash" : "3478944261",
     "id" : "583DA929",
-    "lastKnownWriteTime" : 1442878426,
+    "lastKnownWriteTime" : 1442956968,
     "path" : "C:/GitHub/R-Programming/Week 4/best.R",
     "project_path" : "best.R",
     "properties" : {

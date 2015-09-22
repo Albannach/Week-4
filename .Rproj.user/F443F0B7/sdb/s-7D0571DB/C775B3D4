@@ -1,0 +1,17 @@
+{
+    "contents" : "source(\"best.R\")\nbest(\"TX\", \"heart attack\")\n# \"CYPRESS FAIRBANKS MEDICAL CENTER\"\nbest(\"TX\", \"heart failure\")\n# \"FORT DUNCAN MEDICAL CENTER\"\nbest(\"MD\", \"heart attack\")\n# \"JOHNS HOPKINS HOSPITAL, THE\"\nbest(\"MD\", \"pneumonia\")\n# \"GREATER BALTIMORE MEDICAL CENTER\"\nbest(\"BB\", \"heart attack\")\n#Error in best(\"BB\", \"heart attack\") : invalid state\nbest(\"NY\", \"hert attack\")\n#Error in best(\"NY\", \"hert attack\") : invalid outcome\nsource('rankhospital.R')\nrankhospital(\"TX\", \"heart failure\", 4)\n# \"DETAR HOSPITAL NAVARRO\"\nrankhospital(\"MD\", \"heart attack\", \"worst\")\n# \"HARFORD MEMORIAL HOSPITAL\"\nrankhospital(\"MN\", \"heart attack\", 5000)\n# NA",
+    "created" : 1442956035922.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3952754649",
+    "id" : "C775B3D4",
+    "lastKnownWriteTime" : 1442956620,
+    "path" : "C:/GitHub/R-Programming/Week 4/testWeek4.R",
+    "project_path" : "testWeek4.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

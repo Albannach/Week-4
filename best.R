@@ -1,13 +1,7 @@
-best <- function(state, outcome) {
+best = function(state, outcome, rank=1) {
     
-    od = outcomeData()
-    data = od$data()
-
-    od$validateState(state)
-    columnName = od$validateOutcome(outcome)
+    source("rankhospital.R")
     
-    columns = c("Hospital.Name", columnName)
+    rankhospital(state, outcome, 1)
     
-    stateOutcomes = subset(data, data[,"State"] == state & !is.na(data[,columnName]), select=columns)
-    c(stateOutcomes[order(stateOutcomes[,2], stateOutcomes[,1]),][1,1])
 }

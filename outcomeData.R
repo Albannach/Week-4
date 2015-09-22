@@ -11,14 +11,18 @@ outcomeData = function() {
     for (name in validOutcomes)
         rawData[, name] = suppressWarnings(as.numeric(rawData[, name]))
     
-    states = sort(unique(rawData[, 7]))
+    stateCodes = sort(unique(rawData[, 7]))
 
     data = function() rawData
-    validateState = function(state) if (!is.element(state, states)) stop("invalid state")
+    validateState = function(state) if (!is.element(state, stateCodes)) stop("invalid state")
     validateOutcome = function(outcome) {
         if (!is.element(outcome, names(validOutcomes))) stop("invalid outcome")
         validOutcomes[match(outcome, names(validOutcomes))]
     }
+    states = function() stateCodes
     
-    list(data=data, validateState=validateState, validateOutcome=validateOutcome)
+    list(data=data, 
+         validateState=validateState, 
+         validateOutcome=validateOutcome,
+         states=states)
 }
